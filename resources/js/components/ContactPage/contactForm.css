@@ -1,0 +1,273 @@
+.contactForm {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: row wrap;
+    font-size: 20px;
+    padding: 1%;
+    font-family: "Roboto Mono", monospace;
+}
+
+.contact-center {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    color: #d7d7cd;
+    font-size: 20px;
+    padding: 10px;
+}
+.form > * {
+    margin: 5px;
+    padding: 0px;
+    color: #d7d7cd;
+}
+
+.form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.form-row {
+    width: 100%;
+}
+.error {
+    color: #eca1a6;
+    font-size: 14px;
+    text-align: left;
+}
+.fileAntyspam {
+    flex: 0 40%;
+    order: 1;
+}
+.fileAntyspam {
+    flex: 0 40%;
+    order: 1;
+}
+#email,
+textarea {
+    border-radius: 10px;
+    background-image: url("../layoutImg/whitey/whitey/whitey.png");
+    outline: none;
+    width: 95%;
+    padding: 1%;
+}
+.inputFile {
+    margin: 1%;
+    border-radius: 10px;
+}
+#submitTools {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex: 1 100%;
+}
+
+#submitTools > * {
+    margin: 5px;
+}
+
+.fileAntyspam {
+    flex: 0 40%;
+    order: 1;
+}
+
+.antyspam {
+    padding: 4%;
+}
+#antyspam {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.file {
+    padding: 4%;
+}
+
+#submit_button {
+    align-self: center;
+    flex: 0 40%;
+    order: 2;
+}
+
+#submit {
+    font-family: "Audiowide", cursive;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+#submit:hover {
+    color: #adada6;
+}
+.error {
+    color: #eca1a6;
+    font-size: 14px;
+    text-align: left;
+}
+
+.shake {
+    animation: 1s shake;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-3px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(3px);
+    }
+}
+.element-is-busy {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.element-is-busy::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-right-color: rgba(0, 0, 0, 0.7);
+    transform: translate(-50%, -50%) rotate(0deg);
+    content: "";
+    animation: rotateSingleLoading 0.3s infinite linear;
+    z-index: 100;
+}
+
+@keyframes rotateSingleLoading {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.lds-spinner {
+    right: 40%;
+    top: 50%;
+    color: white;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-spinner div {
+    transform-origin: 30px 30px;
+    animation: lds-spinner 1.2s linear infinite;
+}
+
+.lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+}
+
+.lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+}
+
+.lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+}
+
+.lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+}
+
+.lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+}
+
+.lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+}
+
+.lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.submit-btn {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Audiowide", cursive;
+}
+
+.submit-btn:hover {
+    color: dodgerblue;
+}

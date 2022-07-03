@@ -1,0 +1,17 @@
+.Footer {
+    margin: 0;
+    margin-bottom: 0;
+    flex: 1 100%;
+    order: 3;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    padding: 5px;
+    align-self: flex-end;
+    background-image: url("../layoutImg/whitey/whitey/whitey.png");
+}
+
+@media all and (max-width: 680px) {
+    footer {
+        align-self: flex-end;
+    }
+}

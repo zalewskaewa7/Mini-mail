@@ -1,0 +1,62 @@
+#showMessage {
+    display: none; /* Hidden by default */
+    flex: 0 90%;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 10%;
+    bottom: 2%;
+    top: 1%;
+    overflow: auto;
+    width: 80%;
+    height: auto;
+    background-color: darkgray;
+    border-radius: 1%;
+    box-shadow: 10px 5px 5px black;
+    margin: 1%;
+    padding: 1%;
+}
+.displayMessage {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1.5rem;
+    margin: 1%;
+    padding: 1%;
+    overflow: auto;
+}
+.closeDialog {
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btnClose {
+    padding: 1% 2%;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+}
+.info {
+    margin: 2%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.messageFrom {
+    flex: 0 50%;
+    font-size: 1.5rem;
+}
+.btnPreviousNextMessage {
+    flex: 0 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+.deleteMessage {
+    margin: 2%;
+    display: flex;
+    flex: 0 20%;
+    justify-content: flex-start;
+    align-items: center;
+}

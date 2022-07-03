@@ -1,0 +1,85 @@
+a {
+    text-decoration: none;
+}
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+a:hover {
+    color: darkgray;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.dataRow,
+.row {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    cursor: pointer;
+}
+
+.rowNumber,
+.rowEmail,
+.rowMessage {
+    padding: 2%;
+    border: 1px solid white;
+    width: 100%;
+    overflow: hidden;
+}
+.rowBox {
+    display: flex;
+    flex: 0 0 5%;
+    align-self: center;
+}
+.checkedIcon {
+    display: flex;
+    flex: 0 0 5%;
+    align-self: center;
+}
+
+.rowNumber {
+    display: flex;
+
+    flex: 0 0 5%;
+}
+.rowEmail {
+    display: flex;
+
+    flex: 0 0 20%;
+}
+.rowMessage {
+    /* display: flex; */
+    flex: 0 0 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    text-overflow: ellipsis;
+    max-width: 45ch;
+}
+.deleteLogout {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+button {
+    margin: 1%;
+    padding: 1%;
+    cursor: pointer;
+}
+@media all and (max-width: 1000px) {
+    .rowMessage {
+        max-width: 30ch;
+    }
+}
+@media all and (max-width: 680px) {
+    .rowMessage {
+        max-width: 25ch;
+    }
+}

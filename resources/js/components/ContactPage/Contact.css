@@ -1,0 +1,76 @@
+article {
+    flex: 1 100%;
+    order: 3;
+    margin: 1% 14%;
+    padding: 20px;
+    color: #e6e6db;
+}
+
+article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+article > * {
+    margin: 0 6% 0% 6%;
+}
+
+article section {
+    display: flex;
+    flex: 1 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex: 1 100%;
+    font-size: 20px;
+    padding: 10px;
+    font-family: "Roboto Mono", monospace;
+    color: #d7d7cd;
+}
+h1 {
+    display: flex;
+    justify-self: center;
+    color: #d7d7cd;
+    font-size: 3.5rem;
+    font-family: "Audiowide", cursive;
+    margin: 2%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.contact-center {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    color: #d7d7cd;
+    font-size: 20px;
+    padding: 1%;
+}
+
+.contact-area {
+    display: flex;
+    flex: 1 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    font-family: "Roboto Mono", monospace;
+}
+
+.contact-area > * {
+    margin: 3%;
+    padding: 2%;
+}
+
+@media all and (max-width: 1000px) {
+    article > * {
+        margin: 2%;
+    }
+}
+@media all and (max-width: 680px) {
+    article {
+        margin: 3% 0;
+        padding: 1%;
+    }
+}

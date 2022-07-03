@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    line-height: 1.6;
+    background-image: url("./layoutImg/grey_wash_wall/grey_wash_wall/grey_wash_wall.png");
+    height: 100%;
+}
